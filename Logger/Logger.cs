@@ -18,7 +18,7 @@ namespace Logger
             this.FullLogPath = this.FilePath + this.FileName;
         }
 
-        public override void Log(string messsage)
+        public override void Log(string message)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace Logger
                 {
                     writer.Write("\r\nLog Date Time: ");
                     writer.WriteLine("{0} {1}", DateTime.Now.ToLongTimeString(), DateTime.Now.ToLongDateString());
-                    writer.WriteLine("{0}", messsage);
+                    writer.WriteLine("{0}", message);
                     writer.WriteLine("---------------------------------------------------------------------------");
                 }
             }

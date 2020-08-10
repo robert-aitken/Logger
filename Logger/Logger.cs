@@ -36,7 +36,7 @@ namespace Logger
             }
             catch (Exception e)
             {
-                Console.WriteLine("\n\n\nAn error has occured trying to create the log directory for {0} \n Error: {1}", FullLogPath, e);
+                Console.WriteLine("\n\n\nAn error has occured trying to create the log for {0} \n Error: {1}", FullLogPath, e);
             }
         }
     }
